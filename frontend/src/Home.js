@@ -10,7 +10,7 @@ import {
     Form
 } from "react-bootstrap";
 import {useDispatch,useSelector} from "react-redux";
-import { addUser, deleteUser, loadUsers, updateUser } from './redux/actions';
+import { addUser, deleteUser, loadUsers, updateUser, loadSingleUser } from './redux/actions';
 import { toast } from 'react-toastify';
 
 const initialState = {

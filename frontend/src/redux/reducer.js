@@ -14,6 +14,17 @@ const userReducer = (state = initialState, action) => {
                 users: action.payload,
             };
 
+        case types.ADD_USER:
+        case types.DELETE_USER:
+            return{
+                ...state,
+                msg: action.payload,
+            };
+        case types.GET_SINGLE_USER:
+            return{
+                ...state,
+                user: action.payload,
+            };
         default:
             return state;
     }
